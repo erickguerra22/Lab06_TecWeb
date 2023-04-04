@@ -1,0 +1,37 @@
+body{
+  margin:0;
+  background: url("https://i.pinimg.com/originals/fa/f7/4c/faf74ce89b699c81126f23766895d33b.jpg") no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.card{
+  height: 300px;
+  width: 200px;
+  cursor: pointer;
+  position:relative;
+  transform-style: preserve-3d;
+  transition: transform 1000ms;
+}
+
+.card-back{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/149/803/615/art-nouveau-h-p-lovecraft-cthulhu-wallpaper-preview.jpg");
+  background-size: cover;
+}
+
+.card-front{
+  background: blue;
+  background-size: cover;
+  transform: rotateY(180deg);
+}
+
+.card-back,
+.card-front{
+  position:absolute;
+  height:100%;
+  width:100%;
+  border-radius: 5px;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
+}
+
